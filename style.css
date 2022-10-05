@@ -1,9 +1,81 @@
-/*CSS map*/
+/*detta är för den högra kolumnen*/
+* {
+  box-sizing: border-box;
+}
+
+/*Här är designen för textens teckensnitt för body*/
 body {
-    background-color: lightblue;
+  font-family: Arial;
+  padding: 10px;
+  background: #3b3333;
+}
+
+/* Här är designen av titeln/huvudet */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: rgb(138, 69, 69);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Stil den övre navigeringsraden */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Vänster kolumn */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* höger kolumn */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/*Detta är för varje ruta i texten. */
+.fakeimg {
+  background-color: rgb(114, 111, 111);
+  width: 100%;
+  padding: 20px;
+}
+
+/* Detta är bakgrunden för varje ruta i textens brödtext. */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* för att avsluta de högra kolumnerna */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* sidfoten */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* för att styra kolumnerna om skärmen är mindre än 800px bred, flyttas den högra kolumnen nedåt. */
+@media screen and (max-width: 800px) {
+
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
   }
-  
-  h1 {
-    color: navy;
-    margin-left: 20px;
-  }
+}
